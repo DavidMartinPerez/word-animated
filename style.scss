@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+body {
+   margin: 0;
+   background: #0e3801;
+   font-family: Montserrat, sans-serif;
+}
+
+.gracias {
+   font-size: 20px;
+   text-transform: uppercase;
+   color: #FF4057;
+   white-space: nowrap;
+   letter-spacing: -.15em;
+}
+
+@for $i from 1 through 7 {
+   $duration: 1s;
+   $delay: 0;
+   @if $i % 1 == 0 { $delay: $duration * 0.33 }
+   @if $i % 2 == 0 { $delay: $duration * 0.66 }
+   span:nth-child(#{$i}) {
+     animation: blink $duration steps(1, start) #{$delay} infinite;
+   }
+}
+
+@keyframes blink {
+   33% { color: #FF4057 }
+   66% { color: #66ccff }
+}

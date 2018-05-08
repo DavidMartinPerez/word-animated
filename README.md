@@ -1,4 +1,2 @@
-# WOW SHOP
-### Proyecto de PHP - MYSQL
-* Una APP sobre una tienda.
----------------------------
+## Animated Words with SCSS and HTML5
+![word.png](word.png)
